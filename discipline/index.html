@@ -1,13 +1,13 @@
-<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Kangrui Yu's Blog | Kangrui Yu's Blog</title><meta name="author" content="Kangrui Yu"><meta name="copyright" content="Kangrui Yu"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="自律日历（Discipline Calendar）  :root{   --cell-gap:4px;   --min-cell-size:16px;   --ui-font: system-ui, -apple-system, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, Roboto, &quot;Noto Sans CJK SC&quot;, &quot;PingFang SC&quot;, &quot;Micros">
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Kangrui Yu's Blog | Kangrui Yu's Blog</title><meta name="author" content="Kangrui Yu"><meta name="copyright" content="Kangrui Yu"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content=":root{   --cell-gap:4px;   --min-cell-size:16px;   --ui-font: system-ui, -apple-system, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, Roboto, &quot;Noto Sans CJK SC&quot;, &quot;PingFang SC&quot;, &quot;Microsoft Yahei&quot;, sans-serif; }">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Kangrui Yu&#39;s Blog">
 <meta property="og:url" content="http://example.com/discipline/index.html">
 <meta property="og:site_name" content="Kangrui Yu&#39;s Blog">
-<meta property="og:description" content="自律日历（Discipline Calendar）  :root{   --cell-gap:4px;   --min-cell-size:16px;   --ui-font: system-ui, -apple-system, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, Roboto, &quot;Noto Sans CJK SC&quot;, &quot;PingFang SC&quot;, &quot;Micros">
+<meta property="og:description" content=":root{   --cell-gap:4px;   --min-cell-size:16px;   --ui-font: system-ui, -apple-system, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, Roboto, &quot;Noto Sans CJK SC&quot;, &quot;PingFang SC&quot;, &quot;Microsoft Yahei&quot;, sans-serif; }">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/img/avatar.jpg">
-<meta property="article:published_time" content="2025-11-01T03:44:55.601Z">
-<meta property="article:modified_time" content="2025-11-01T03:44:55.601Z">
+<meta property="article:published_time" content="2025-11-01T04:05:59.560Z">
+<meta property="article:modified_time" content="2025-11-01T04:05:59.560Z">
 <meta property="article:author" content="Kangrui Yu">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/img/avatar.jpg"><link rel="shortcut icon" href="/img/icon.png"><link rel="canonical" href="http://example.com/discipline/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
@@ -55,7 +55,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2025-11-01 14:44:55'
+  postUpdate: '2025-11-01 15:05:59'
 }</script><script>(win=>{
       win.saveToLocal = {
         set: (key, value, ttl) => {
@@ -157,7 +157,6 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>自律日历（Discipline Calendar）</title>
 <style>
 :root{
   --cell-gap:4px;
@@ -185,19 +184,16 @@ button.btn.primary{background:#2d9c4a;color:#fff;border:0}
 <body>
 <div class="dc-wrap" id="discipline-calendar-root">
   <div class="dc-header">
-    <div>
-      <!-- <div class="dc-title">自律日历 · Discipline Calendar</div> -->
-      <!-- <div style="font-size:13px;color:#666">三视图日历（年/月/周），颜色按白→绿→蓝→紫渐变（0→maxCount），0=白色，maxCount=黑色或最深色</div> -->
-    </div>
+
     <div class="dc-controls">
       <select id="view-mode">
-        <option value="year">年视图</option>
-        <option value="month">月视图</option>
-        <option value="week">周视图</option>
+        <option value="year">年</option>
+        <option value="month">月</option>
+        <option value="week">周</option>
       </select>
-      <button class="btn" id="btn-prev">⬅ 上一</button>
-      <button class="btn" id="btn-next">下一 ➡</button>
-      <button class="btn primary" id="btn-checkin">✅ 今日 +1</button>
+      <button class="btn" id="btn-prev">⬅</button>
+      <button class="btn" id="btn-next">➡</button>
+      <button class="btn primary" id="btn-checkin">今日 +1</button>
       <button class="btn" id="btn-export">📤 导出 JSON</button>
       <button class="btn" id="btn-import">📥 导入 JSON</button>
       <input id="file-import" type="file" accept="application/json" style="display:none">
@@ -210,14 +206,14 @@ button.btn.primary{background:#2d9c4a;color:#fff;border:0}
 
   <div class="dc-stats">
     <div class="item">总 discipline 值：<strong id="stat-total">0</strong></div>
-    <!-- <div class="item">连续打卡天数：<strong id="stat-streak">0</strong></div> -->
-    <!-- <div class="item">最后更新：<span id="stat-last">—</span></div> -->
-    <div class="item">当前：<strong id="stat-current">2025</strong></div>
+    <div class="item">连续打卡天数：<strong id="stat-streak">0</strong></div>
+    <div class="item">最后更新：<span id="stat-last">—</span></div>
+    <div class="item">当前：<strong id="stat-current">—</strong></div>
   </div>
 
-  <div id="dc-grid" class="dc-grid"></div>
+  <div id="dc-grid" class="dc-grid" aria-label="discipline calendar grid"></div>
 
-  <div class="dc-legend">
+  <div class="dc-legend" aria-hidden="false">
     <div style="font-size:13px;color:#666">图例：</div>
     <div class="legend-box" id="lg-0"></div>
     <div class="legend-box" id="lg-1"></div>
@@ -227,7 +223,6 @@ button.btn.primary{background:#2d9c4a;color:#fff;border:0}
     <div class="legend-box" id="lg-5"></div>
   </div>
 
-  <!-- <div class="dc-footer">数据保存在本地浏览器（localStorage），可导入/导出 JSON 同步。</div> -->
 </div>
 
 <script>
@@ -252,8 +247,8 @@ button.btn.primary{background:#2d9c4a;color:#fff;border:0}
   const btnImport=document.getElementById('btn-import');
   const fileImport=document.getElementById('file-import');
   const statTotal=document.getElementById('stat-total');
-  const statStreak=document.getElementById('stat-streak');
-  const statLast=document.getElementById('stat-last');
+  const statStreak=document.getElementById('stat-streak'); // 现在存在于 DOM
+  const statLast=document.getElementById('stat-last');     // 现在存在于 DOM
   const statCurrent=document.getElementById('stat-current');
   const maxCountInput=document.getElementById('max-count-input');
 
@@ -315,7 +310,7 @@ button.btn.primary{background:#2d9c4a;color:#fff;border:0}
   function render(){
     // 更新图例（均匀取 6 个点显示）
     const legendSteps = [0, Math.round(maxCount*0.2), Math.round(maxCount*0.4), Math.round(maxCount*0.6), Math.round(maxCount*0.8), maxCount];
-    [lg0,lg1,lg2,lg3,lg4,lg5].forEach((el,i)=>{ el.style.background=colorScale(legendSteps[i]); el.title=`${legendSteps[i]}`; });
+    [lg0,lg1,lg2,lg3,lg4,lg5].forEach((el,i)=>{ if(el) { el.style.background=colorScale(legendSteps[i]); el.title=`${legendSteps[i]}`; } });
 
     grid.innerHTML='';
     const dates=getDates();
@@ -354,33 +349,41 @@ button.btn.primary{background:#2d9c4a;color:#fff;border:0}
 
   function updateStats(){
     const data=loadData();
-    statTotal.textContent=Object.values(data).reduce((a,b)=>a+(b||0),0);
-    const today=new Date();
+    if(statTotal) statTotal.textContent = Object.values(data).reduce((a,b)=>a+(b||0),0);
+
+    // 计算连续天数
     let streak=0;
+    const today=new Date();
     for(let i=0;i<1000;i++){
       const d=new Date(today.getFullYear(),today.getMonth(),today.getDate()-i);
       if((data[dateKey(d)]||0)>0) streak++; else break;
     }
-    statStreak.textContent=streak;
+    if(statStreak) statStreak.textContent = streak;
+
+    // 最后打卡日期
     const keys=Object.keys(data).filter(k=>data[k]>0).sort();
-    statLast.textContent=keys.length?keys[keys.length-1]:'—';
-    if(viewMode==='year') statCurrent.textContent=currentDate.getFullYear();
-    else if(viewMode==='month') statCurrent.textContent=`${currentDate.getFullYear()}-${currentDate.getMonth()+1}`;
-    else if(viewMode==='week') {
-      const start=new Date(currentDate); start.setDate(start.getDate()-start.getDay());
-      const end=new Date(start); end.setDate(start.getDate()+6);
-      statCurrent.textContent=`${start.toISOString().slice(0,10)} ~ ${end.toISOString().slice(0,10)}`;
+    if(statLast) statLast.textContent = keys.length?keys[keys.length-1]:'—';
+
+    // 当前视图显示（确保一定执行）
+    if(statCurrent){
+      if(viewMode==='year') statCurrent.textContent = currentDate.getFullYear();
+      else if(viewMode==='month') statCurrent.textContent = `${currentDate.getFullYear()}-${currentDate.getMonth()+1}`;
+      else if(viewMode==='week'){
+        const start=new Date(currentDate); start.setDate(start.getDate()-start.getDay());
+        const end=new Date(start); end.setDate(start.getDate()+6);
+        statCurrent.textContent = `${start.toISOString().slice(0,10)} ~ ${end.toISOString().slice(0,10)}`;
+      }
     }
   }
 
   viewSelect.addEventListener('change',(e)=>{viewMode=e.target.value; render();});
-  btnPrev.addEventListener('click',()=>{
+  btnPrev.addEventListener('click',()=>{ 
     if(viewMode==='year'){ if(currentDate.getFullYear()>START_YEAR) currentDate.setFullYear(currentDate.getFullYear()-1);} 
     else if(viewMode==='month'){ currentDate.setMonth(currentDate.getMonth()-1);} 
     else if(viewMode==='week'){ currentDate.setDate(currentDate.getDate()-7);} 
     render();
   });
-  btnNext.addEventListener('click',()=>{
+  btnNext.addEventListener('click',()=>{ 
     if(viewMode==='year'){ if(currentDate.getFullYear()<END_YEAR) currentDate.setFullYear(currentDate.getFullYear()+1);} 
     else if(viewMode==='month'){ currentDate.setMonth(currentDate.getMonth()+1);} 
     else if(viewMode==='week'){ currentDate.setDate(currentDate.getDate()+7);} 
@@ -418,16 +421,17 @@ button.btn.primary{background:#2d9c4a;color:#fff;border:0}
     reader.readAsText(f,'utf-8'); e.target.value='';
   });
 
-  // 当用户修改 maxCount 时更新并重新渲染
+  // 当用户修改 maxCount 时更新并重新渲染，同时保存到 localStorage 以便跨次打开保持
   maxCountInput.addEventListener('change',(e)=>{
     let v = parseInt(e.target.value,10);
     if(!isFinite(v) || v < 1) v = 1;
     maxCount = v;
     e.target.value = v;
+    try{ localStorage.setItem(STORAGE_KEY+"_maxCount", String(maxCount)); }catch(e){}
     render();
   });
 
-  // 如果你想把 maxCount 存到 localStorage 保持跨次打开，可以在这里读取/写入
+  // 读取已保存的 maxCount
   (function loadMaxCount(){
     try{
       const m = parseInt(localStorage.getItem(STORAGE_KEY+"_maxCount"),10);
@@ -435,7 +439,7 @@ button.btn.primary{background:#2d9c4a;color:#fff;border:0}
     }catch(e){}
   })();
 
-  // 在用户修改后保存 maxCount（避免频繁写入，这里在离开页面时保存）
+  // 在用户离开页面时再保存一次（冗余保护）
   window.addEventListener('beforeunload',()=>{ try{ localStorage.setItem(STORAGE_KEY+"_maxCount", String(maxCount)); }catch(e){} });
 
   render();
@@ -450,4 +454,4 @@ button.btn.primary{background:#2d9c4a;color:#fff;border:0}
             </div>
             <ul class="card-category-list" id="aside-cat-list">
             <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"><span class="card-category-list-name">数据分析</span><span class="card-category-list-count">1</span></a></li>
-            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>Tags</span></div><div class="card-tag-cloud"><a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" style="font-size: 1.1em; color: #999">机器学习</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" style="font-size: 1.1em; color: #999">数据分析</a> <a href="/tags/Python/" style="font-size: 1.1em; color: #999">Python</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/11/"><span class="card-archive-list-date">November 2025</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/10/"><span class="card-archive-list-date">October 2024</span><span class="card-archive-list-count">1</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">2</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Update :</div><div class="item-count" id="last-push-date" data-lastPushDate="2025-11-01T03:45:31.341Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2025 By Kangrui Yu</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>Tags</span></div><div class="card-tag-cloud"><a href="/tags/Python/" style="font-size: 1.1em; color: #999">Python</a> <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" style="font-size: 1.1em; color: #999">机器学习</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" style="font-size: 1.1em; color: #999">数据分析</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/11/"><span class="card-archive-list-date">November 2025</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/10/"><span class="card-archive-list-date">October 2024</span><span class="card-archive-list-count">1</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">2</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Update :</div><div class="item-count" id="last-push-date" data-lastPushDate="2025-11-01T04:06:14.378Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2025 By Kangrui Yu</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
